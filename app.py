@@ -56,8 +56,6 @@ def summarize_dialogue(dialogue: str) -> str:
       early_stopping=True
   )
 
-  # print("Generated IDs:", targets)
-  
   # decoded output
   summary = tokenizer.decode(targets[0], skip_special_tokens=True) # EOS
   return summary
